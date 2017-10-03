@@ -1,0 +1,9 @@
+language: java
+sudo: enabled
+
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq openjdk-9-jdk-headless
+
+script:
+    - ./gradlew build
