@@ -1,7 +1,15 @@
-//import java.lnag.Exception
 
-public class LeapYear {
-    public static boolean check(int year) {
+package ce66007;
+import se.LeapYear;
+
+/**
+ * うるう年
+ */
+
+public class LeapYearImpl implements LeapYear {
+
+    @Override
+    public boolean isLeapYear(int year) {
         if (0 >= year) {
             throw new IllegalArgumentException("Argument Error YEAR");
         }
